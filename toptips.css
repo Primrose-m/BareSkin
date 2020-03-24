@@ -5,27 +5,37 @@ h1,h2,h3,h4,h5,h6{
 h1 {
     font-family: "Apercu Pro", -apple-system, BlinkMacSystemFont, Helvetica, "Helvetica Neue", Arial, sans-serif;
     text-shadow: 2px 2px rgb(206, 149, 173); 
-    border-top: 5px solid #bcdbe7;
+    border-top: 5px solid #bcdbe7; 
     border-bottom: 5px solid #bcdbe7;
     text-align: center;
-    font-size: 36px;
-    float:center;
-  }
+    font-size: 36px;}
 
-  /*  CSS for Navigation bar start */
+/*  CSS for Navigation bar start */
+ul{
+    margin: 0;
+    padding: 0;
+
+    /*this option by default dispose the elements in a row (flex-direction: row)*/
+    display: flex;}
+
 li{
+  list-style-type: none;  
+  
   /*when I specify 2 values to margin, the first one is for the top and bottom side, the second for the left and right side*/
   margin: 0 2.5vw;
 }
 
 li{
+    list-style-type: none;  
     margin: 0 2vw;
     /* our font-size will be 3% of the height of the viewport */
     font-size: 3vh;
   }
 
+
 a{ 
     text-decoration: none;
+    
     /*below I changed the color*/
     color: black;
     /*I added some padding*/
@@ -37,18 +47,17 @@ a{
 a:hover{
     background-color: #f1f8f4;}
 
-/* CSS for navigation bar end */
 
 .container1 {
-    font-family: "Apercu Pro", -apple-system, BlinkMacSystemFont, Helvetica, "Helvetica Neue", Arial, sans-serif;
-    margin: 0 auto;
-    padding: 15px;
-    text-align: center;
-    width: 100%;
-    word-spacing: 0px;}
-
+        font-family: "Apercu Pro", -apple-system, BlinkMacSystemFont, Helvetica, "Helvetica Neue", Arial, sans-serif;
+        margin: 0 auto;
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        word-spacing: 0px;}
+    
 .header {text-align: center;}
-
+/* CSS for navigation bar end */
 h2{
     font-family: "Apercu Pro", -apple-system, BlinkMacSystemFont, Helvetica, "Helvetica Neue", Arial, sans-serif;
     font-weight:400;
@@ -56,44 +65,11 @@ h2{
     font-size: 18px;
 }
 
-h3{font-family:'Courier New', Courier, monospace;
-    font-weight:300;
-    font-size: 16px;
-    text-align: left;
-}
-
-h4{font-family: 'Courier New', Courier, monospace;
-    font-weight:300;
-    font-size: 16px;
-
-}
-h5{font-family: 'Courier New', Courier, monospace;
-    font-weight:300;
-    font-size: 16px;
-
-}
-
 li{font-family: 'Courier New', Courier, monospace;
-    font-style: inherit;
-    font-weight: 300;
-    white-space: normal;
-    font-size: 15px;
-    line-height: 18px;
-    margin: 0px;
-    color:rgb(206, 149, 173);}
-p{font-family: 'Courier New', Courier, monospace;
     font-style: inherit;
     font-weight: 100;
     white-space: normal;
     font-size: 15px;
     line-height: 19px;
-    margin: 0px;
-}
-.border-test{
-    border: black 1px solid;
-}
-.img-parent {
-    text-align:center;
-}
-#borderblue{
-background-color:#bcdbe7;}
+    margin: 1.5rem 0px;}
+p{color: rgb(206, 149, 173);}

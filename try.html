@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="./try.css" rel="stylesheet">
+  <script src="./try.js"></script>
+  <title>Quiz App</title>
+</head>
+<body>
+ 
+  <h1>BARE SKIN.</h1>
+
+  <header id="header" class="header-main"> 
+
+      <!-- Navigation Bar -->
+      <div class="container1 gray">
+        <a href="./indexbare.html" style="color:rgb(206, 149, 173);text-decoration:none;">HOME</a>
+        <a href="./try.html" style="color:rgb(206, 149, 173);text-decoration:none;">SKIN TYPES</a>
+        <a href="./skinconditions.html" style="color:rgb(206, 149, 173);text-decoration:none;">SKIN CONDITIONS</a>
+        <a href="./toptips.html"  style="color:rgb(206, 149, 173);text-decoration:none;">TOP TIPS</a>
+      </div>
+  
+  </header>
+
+</body><div id="wrapper">
+    <h2>What Best describes your skin</h2>
+    <center>
+    <img src="skin-types-skinney-medspa.png"  height="300" width="500"> 
+    <p>Take our simple quiz to find out!</p>
+</center>
+    <form id="quiz">
+      <!-- Question 1 -->
+      <h3>Which Best Describes Your Pores?</h3>
+      <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
+      <!-- The value is which answer the choice corresponds to. -->
+      <label><input type="radio" name="q1" value="c1">
+        Small and not visible.
+      </label><br />
+      <label><input type="radio" name="q1" value="c2">
+        Large or medium sized and only visible in T zone
+      </label><br />
+      <label><input type="radio" name="q1" value="c3">
+        Large and visible all over
+      </label><br />
+     
+  
+      <!-- Question 2 -->
+      <h3>What Is Your Main Skin Concern ?</h3>
+     
+      <label><input type="radio" name="q2" value="c1">
+        Dryness.
+      </label><br />
+      <label><input type="radio" name="q2" value="c2">
+        None.
+      </label><br />
+      <label><input type="radio" name="q2" value="c3">
+        Oil Control/clogged Pores.
+      </label><br />
+      
+      <!-- Question 3 -->
+      <h3>How much sleep do you typically get?</h3>
+      <!-- Choices for the third question -->
+      <label><input type="radio" name="q3" value="c1">
+        Under 7 hours
+      </label><br />
+      <label><input type="radio" name="q3" value="c2">
+        7 To 8 hours.
+      </label><br />
+      <label><input type="radio" name="q3" value="c3">
+        Over 8 hours.
+        
+      </label><br />
+     
+      
+      <!-- Question 4 -->
+      <h2>When you wash your face with mild cleanser , after 30 mintutes how your skin feel! </h2>
+      <!-- Choices for the fourth question -->
+      <label><input type="radio" name="q4" value="c1">
+        Flaky and tight.
+      </label><br />
+      <label><input type="radio" name="q4" value="c2">
+        Noticible shine in the T zone.
+      </label><br />
+      <label><input type="radio" name="q4" value="c3">
+        Shine all over the face.
+      </label><br />
+      
+      
+      <button type="submit" id="submit" onclick="choiceAnswers()">Submit </button>
+    <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+    </form>
+    
+    
+    <div id="answer">Your result will show up here!</div>
+  </div>
+</html>

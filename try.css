@@ -1,0 +1,101 @@
+
+h1 {
+  font-family: "Apercu Pro", -apple-system, BlinkMacSystemFont, Helvetica, "Helvetica Neue", Arial, sans-serif;
+  text-shadow: 2px 2px rgb(206, 149, 173); 
+  border-top: 5px solid #ffffff; 
+  border-bottom: 5px solid #ffffff;
+  text-align: center;
+  font-size: 36px;}
+
+/*  CSS for Navigation bar start */
+ul{
+  margin: 0;
+  padding: 0;
+
+  /*this option by default dispose the elements in a row (flex-direction: row)*/
+  display: flex;}
+
+li{
+list-style-type: none;  
+
+/*when I specify 2 values to margin, the first one is for the top and bottom side, the second for the left and right side*/
+margin: 0 2.5vw;
+}
+
+li{
+  list-style-type: none;  
+  margin: 0 2vw;
+  /* our font-size will be 3% of the height of the viewport */
+  font-size: 3vh;
+}
+
+
+a{ 
+  text-decoration: none;
+  
+  /*below I changed the color*/
+  color: black;
+  /*I added some padding*/
+  padding: 2vw;
+  /*also changed the font family but that's totally irrelevant*/
+  font-family: monospace;
+  font-size: 14px;
+}
+a:hover{
+  background-color: #f1f8f4;}
+
+
+.container1 {
+      font-family: "Apercu Pro", -apple-system, BlinkMacSystemFont, Helvetica, "Helvetica Neue", Arial, sans-serif;
+      margin: 0 auto;
+      padding: 15px;
+      text-align: center;
+      width: 100%;
+      word-spacing: 0px;}
+  
+.header {text-align: center;}
+/* CSS for navigation bar end */
+
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background:#bcdbe7;
+  }
+  .quiz {font-family: 'Courier New', Courier, monospace;
+
+  }
+  h2,h3,h4 {font-family: 'Courier New', Courier, monospace;
+    font-size:14px;
+    margin: 5px 0;
+  }
+  #wrapper {
+    width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+  input {
+    margin: 5px 10px;
+  }
+  button {
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px 0;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    border-bottom: 3px solid #333;
+  }
+  #submit {
+    background: rgb(182, 198, 204);
+  }
+  #reset {
+    background:rgb(182, 198, 204);;
+  }
+  #answer {
+    border: 1px dashed #ccc;
+    background: #eee;
+    padding: 10px;
+  }
